@@ -1,0 +1,70 @@
+{
+  "_from": "moneyd@^4.3.0",
+  "_id": "moneyd@4.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fJTIKbfw6MRdAk86asO7f6pKc7yH/mozOEqtZ0vlmQUtCrWI2Pxa84DzweAbC82VS630QQiSWAb04/HDQAM8OA==",
+  "_location": "/moneyd",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "moneyd@^4.3.0",
+    "name": "moneyd",
+    "escapedName": "moneyd",
+    "rawSpec": "^4.3.0",
+    "saveSpec": null,
+    "fetchSpec": "^4.3.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/moneyd/-/moneyd-4.3.0.tgz",
+  "_shasum": "c60cd2cea47f5961142c3bd3eb6a9d64d3a799f8",
+  "_spec": "moneyd@^4.3.0",
+  "_where": "C:\\Users\\Dassy\\projects\\test",
+  "author": {
+    "name": "Ben Sharafian"
+  },
+  "bin": {
+    "moneyd": "./bin/moneyd.js"
+  },
+  "bugs": {
+    "url": "https://github.com/interledgerjs/moneyd/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "find-free-port": "^2.0.0",
+    "ilp-connector": "^22.1.0",
+    "ilp-plugin-mini-accounts": "^3.5.1",
+    "ilp-store-memory": "^1.0.0",
+    "moment": "^2.22.1",
+    "node-fetch": "^2.1.2",
+    "portfinder": "^1.0.20",
+    "yargs": "^12.0.1"
+  },
+  "deprecated": false,
+  "description": "ILP provider using XRP payment channels",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "homepage": "https://github.com/interledgerjs/moneyd#readme",
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "name": "moneyd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interledgerjs/moneyd.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\""
+  },
+  "version": "4.3.0"
+}
