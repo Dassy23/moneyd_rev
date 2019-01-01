@@ -2,7 +2,10 @@
 const Connector = require('ilp-connector')
 const Config = require('./config')
 const getPort = require('get-port');
-var port
+
+const ENV = require('../../../env.js')
+
+var port = ENV.read('PORT')
 
 
 const DEFAULT_ALLOWED_ORIGINS = [
@@ -55,8 +58,6 @@ class Moneyd {
   }
 
   async startConnector (uplinkData) {
-    port = await getPort();
-    debugger
     return Connector.createApp({
       spread: 0,
       backend: 'one-to-one',
@@ -108,7 +109,7 @@ class Moneyd {
             settleThreshold: '-Infinity'
           },
           options: {
-            wsOpts: { host: 'localhost', port: 7768 },
+            wsOpts: { host: 'localhost', port: port },
             allowedOrigins: this.allowedOrigins
           }
         }
